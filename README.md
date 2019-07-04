@@ -46,3 +46,16 @@ We have two choice for feature scaling 1. standard deviation 2. Normalization
 here we are using Normalization bcoz Normalization is more suited in RNN and in the activation fuction where Sigmoid function is use at the output.
 
 ## Create a data Structure
+```X_train=[]
+y_train=[]
+for i in range(60 , 1258):
+    X_train.append(training_set_scale[i-60:i , 0])
+    y_train.append(training_set_scale[i , 0])
+
+X_train , y_train = np.array(X_train) , np.array(y_train)
+```
+```X_train=[]``` contains the list of all 60 previous openings of google stock market.
+``` y_train=[]``` it is the opening of 60+1 st financial day of google stock market.
+
+```X_train.append(training_set_scale[i-60:i , 0])``` it contains all the opening of all 60days for coloumn 0 which is for opening coloumn.
+```y_train.append(training_set_scale[i , 0])``` 60+1 st opening  
