@@ -44,3 +44,5 @@ training_set_scale = sc.fit_transform(training_set)
 ```
 We have two choice for feature scaling 1. standard deviation 2. Normalization
 here we are using Normalization bcoz Normalization is more suited in RNN and in the activation fuction where Sigmoid function is use at the output.
+
+## Create a data Structure

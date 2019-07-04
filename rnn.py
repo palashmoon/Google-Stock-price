@@ -35,6 +35,7 @@ X_train = np.reshape(X_train , (X_train.shape[0] , X_train.shape[1] , 1))
 # Part 2 - Building the RNN
 
 # Importing the Keras libraries and packages
+
 from keras.model import Sequential
 from keras.layers import Dense
 from keras.layers import Dropout
