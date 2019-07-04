@@ -28,7 +28,7 @@ training_set = dataset_train.iloc[: , 1:2].values
  ### 1.why feature scaling?
   If a feature in the dataset is big in scale compared to others then in algorithms where Euclidean distance is measured this big scaled feature becomes dominating and needs to be normalized.
 
-###Examples of Algorithms where Feature Scaling matters 
+### Examples of Algorithms where Feature Scaling matters 
 1. K-Means uses the Euclidean distance measure here feature scaling matters.
 2. K-Nearest-Neighbours also require feature scaling.
 3. Principal Component Analysis (PCA): Tries to get the feature with maximum variance, here too feature scaling is required.
